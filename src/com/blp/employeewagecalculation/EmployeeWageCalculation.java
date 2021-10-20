@@ -11,6 +11,7 @@ public class EmployeeWageCalculation {
     public static final int EMP_FULL_TIME_HOUR = 1;
     public static final int EMP_PART_TIME_HOUR = 2;
     public static final int EMP_WAGE_PER_HOUR = 20;
+    public static final int EMP_WORKING_DAY_MONTH = 20;
 
     public static void main(String[] args) {
         //Declaration of variables
@@ -31,6 +32,7 @@ public class EmployeeWageCalculation {
                 System.out.println("Employee is absent");
         }
         int empWage = (EMP_WAGE_PER_HOUR * empHours);
-        System.out.println("Employee Wage = " + empWage);
+        int totalEmpWage = (empWage * EMP_WORKING_DAY_MONTH);
+        System.out.println("Employee Wage = " + totalEmpWage);
     }
 }
